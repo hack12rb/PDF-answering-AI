@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Questions</title>
+</head>
+<body>
+    <h1>Ask Questions</h1>
+    <form action="/answer" method="post">
+        <textarea name="question" rows="4" cols="50"></textarea>
+        <input type="submit" value="Ask">
+    </form>
+    {% if answer %}
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
